@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 400;
+
+}
+
+/* .anony{
+  font-family: "Anonymous Pro", monospace;
+  font-weight: 400;
+  font-style: normal;
+    letter-spacing: 3px;
+
+} */
+
+/* .kabla{
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 24;
+    letter-spacing: 4px;
+} */
+
+.plum{
+    /* color: #8a4f63; */
+    color: #bb95a1;
+}
+.plum:hover{
+    color:#ad5774;
+}
+.plum2{
+    /* color: #8a4f63; */
+    color: #ad5774;
+}
+.title{
+    z-index: 100;
+    top: 0;
+    left: 0;
+    position: absolute;
+    top: 30px;
+    width: 200px;
+
+}
+
+/* ===== 背景固定 ===== */
+body {
+    /* background-image: url ("images/main.png"); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* bodyはスクロールさせない */
+}
+
+
+/* ===== サイドバー固定 ===== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 2rem 1rem;
+    background: rgba(20, 30, 25, 0.75);
+    /* background: rgba(255, 255, 255, 0.5); */
+    color: #fff;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* 縦中央 */
+    align-items: center;       /* 横中央（任意） */
+}
+.sidebar-title{
+    position: absolute;
+    top: 10px;
+}
+
+.sidebar a {
+    /* color: #fff; */
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+/* ===== スクロールコンテナ ===== */
+.main-content {
+    margin-left: 220px;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+
+}
+
+/* メインセクション */
+.main-section{
+    height: 100vh;
+    position: relative;
+    letter-spacing: 1.5px;
+
+}
+.text-hero{
+    position: absolute;
+    background: rgba(20, 30, 25, 0.75);
+    right: 80px;
+    bottom: 80px;
+    text-align: end;
+}
+
+/* ===== 各セクション ===== */
+.snap {
+    scroll-snap-align: start;
+}
+
+.snap-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+
+
+}
+
+.section-box {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 3rem;
+    width: 100%;
+
+}
+
+.section-title {
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+}
+.my-icon{
+    background: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    position: relative;
+
+}
+.name{
+    position: absolute;
+    right: 40px;
+    top: 80px;
+    transform: rotate(20deg);
+    font-weight: lighter;
+    font-size: 25px;
+    opacity: 70%;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.works-section-box{
+    /* width: 100%; */
+    max-height: calc(100vh - 400px);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.burger-btn{
+    display: none;
+}
+
+@media screen and (max-width:768px){
+
+  /* .title{
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+    width: 125px;
+
+  } */
+  .sidebar{
+    display: none;
+    left: 0;
+  }
+
+
+.main-content {
+    margin-left: 0;
+}
+
+.text-hero{
+    position: static;
+
+    text-align: center;
+
+}
+.main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+
+}
+
+/* .section-box{
+    margin-top: 50px;
+    margin-bottom: 10px;
+} */
+.snap-section{
+    padding: 0.5rem;
+}
+
+  /* ハンバーガーボタン */
+  .burger-btn{
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 24px;
+    z-index: 100;
+    cursor: pointer;
+
+  }
+
+  .bar{
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #bb95a1;
+    position: absolute;
+    z-index: 9; /*メニューの下に隠れないようにz-indexを指定する*/
+  }
+  .bar_top{
+    top: 0;
+  }
+  .bar_middle{
+    top: 11px;
+  }
+  .bar_bottom{
+    bottom: 0;
+  }
+
+    /* ハンバーガーボタンをクリックしたときのボタンの見た目 */
+  .burger-btn.cross .bar_top{
+    transform: rotate(45deg);
+    top:11px;
+    transition: .3s;
+  }
+  .burger-btn.cross .bar_middle{
+    opacity: 0;
+    transition: .3s;
+  }
+  .burger-btn.cross .bar_bottom{
+    transform: rotate(-45deg);
+    bottom: 11px;
+    transition: .3s;
+  }
+
+  nav{
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 1rem;
+    background: rgb(20, 30, 25);
+}
+
+}

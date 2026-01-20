@@ -53,9 +53,11 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Post $post)
+    public function show()
     {
-        //
+        $all_categories = $this->category->inRandomOrder()->get();
+        $all_posts = $this->post->all();
+        return view('works.works')->with('all_posts', $all_posts)->with('all_categories', $all_categories);
     }
 
     /**
@@ -64,6 +66,7 @@ class PostController extends Controller
     public function edit(Post $post)
     {
         //
+
     }
 
     /**

@@ -119,8 +119,10 @@
                 </div>
 
             <div class="text-end m-0">
-                <h4 class="kabla text-end text-secondary d-inline">More</h4>
-                <p class="text-secondary d-inline">(Coming soon...)</p>
+                <a href="{{route('post.show')}}" class="text-decoration-none">
+                    <h4 class="text-end d-inline plum">More</h4>
+                    {{-- <p class="text-secondary d-inline">(Coming soon...)</p> --}}
+                </a>
             </div>
         </div>
     </section>

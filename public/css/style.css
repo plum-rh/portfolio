@@ -53,9 +53,14 @@ body {
     background-attachment: fixed;
     margin: 0;
     height: 100vh;
-    overflow: hidden; /* bodyはスクロールさせない */
-}
 
+}
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 30, 25, 0.40);
+  z-index: -1;
+}
 
 /* ===== サイドバー固定 ===== */
 .sidebar {

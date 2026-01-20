@@ -18,7 +18,7 @@ class HomeController extends Controller
     public function __construct( Post $post)
     {
         $this->middleware('auth')
-             ->except('index');
+             ->except('index','post.show');
         $this->post = $post;
     }
 

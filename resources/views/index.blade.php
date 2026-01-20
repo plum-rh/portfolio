@@ -12,6 +12,8 @@
     <!-- CDN CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <link rel="shortcut icon" href="{{ asset('images/plum_logo_p3.png') }}">
+
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -133,10 +135,12 @@
         <div class="section-box text-center">
             <h1 class="section-title plum2 kabla ">CONTACT</h1>
             <p class="text-center">
-                <i class="fa-brands fa-instagram fs-1"></i>
-                <i class="fa-regular fa-envelope fs-1"></i>
+                <a href="https://www.instagram.com/riho.plum_kobo/" class="text-decoration-none text-dark"><i class="fa-brands fa-instagram fs-1"></i></a>
+
+                <a href="mailto:riho.ham.plum@gmail.com" class="text-decoration-none text-dark"><i class="fa-regular fa-envelope fs-1"></i></a>
+
             </p>
-            <p>ご依頼・ご相談はお気軽に</p>
+            <p>ご依頼・ご相談はお気軽にご連絡ください。</p>
 
         </div>
     </section>

@@ -23,24 +23,6 @@
 
 }
 
-/* .anony{
-  font-family: "Anonymous Pro", monospace;
-  font-weight: 400;
-  font-style: normal;
-    letter-spacing: 3px;
-
-} */
-
-/* .kabla{
-    font-family: "Kablammo", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-        "MORF" 24;
-    letter-spacing: 4px;
-} */
-
 .plum{
     /* color: #8a4f63; */
     color: #bb95a1;
@@ -64,7 +46,6 @@
 
 /* ===== 背景固定 ===== */
 body {
-    /* background-image: url ("images/main.png"); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -88,7 +69,6 @@ body {
     height: 100vh;
     padding: 2rem 1rem;
     background: rgba(20, 30, 25, 0.75);
-    /* background: rgba(255, 255, 255, 0.5); */
     color: #fff;
     z-index: 5;
     display: flex;
@@ -182,7 +162,6 @@ body {
 }
 
 .works-section-box{
-    /* width: 100%; */
     max-height: calc(100vh - 400px);
     max-width: 1000px;
     margin: 0 auto;
@@ -194,15 +173,6 @@ body {
 
 @media screen and (max-width:768px){
 
-  /* .title{
-    position: fixed;
-    top: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 200;
-    width: 125px;
-
-  } */
   .sidebar{
     display: none;
     left: 0;
@@ -227,10 +197,6 @@ body {
 
 }
 
-/* .section-box{
-    margin-top: 50px;
-    margin-bottom: 10px;
-} */
 .snap-section{
     padding: 0.5rem;
 }
@@ -296,12 +262,8 @@ body {
     padding: 2rem 1rem;
     background: rgb(20, 30, 25);
 }
-
 }
-
-
     </style>
-
 
 </head>
 <body  style="background-image: url('{{ asset('images/main.png') }}');">
@@ -317,18 +279,16 @@ body {
     </div>
 
     <nav class="fw-bold sidemenu">
-        <a href="#about" class="plum kabla">ABOUT ME</a>
-        <a href="#works" class="plum kabla">WORKS</a>
-        <!-- <a href="#" class="plum kabla">
+        <a href="#about" class="plum">ABOUT ME</a>
+        <a href="#works" class="plum">WORKS</a>
+        <!-- <a href="#" class="plum">
             BLOG
             <p class="fs-6 m-0 p-0">
                 coming soon...
             </p>
         </a> -->
-        <a href="#contact" class="plum kabla">CONTACT</a>
+        <a href="#contact" class="plum">CONTACT</a>
     </nav>
-
-
 
 </aside>
 
@@ -349,8 +309,8 @@ body {
     <section id="hero" class="main-section snap text-white ">
         <div class="text-hero p-5">
             <p class="">声はあるのに、届いていない。<br>価値はあるのに、知られていない。<br>そんな活動を、Webサイトから世界へつなぎたい。</p>
-            <h1 class="fw-light kabla">PLUM PROJECT</h1>
-            <h3 class="fw-light anony">Website Production</h3>
+            <h1 class="fw-light">PLUM PROJECT</h1>
+            <h3 class="fw-light">Website Production</h3>
         </div>
     </section>
 
@@ -358,7 +318,7 @@ body {
     <!-- ABOUT -->
     <section id="about" class="snap-section snap overflow-auto">
         <div class="section-box">
-            <h1 class="section-title plum2 kabla text-center">ABOUT ME</h1>
+            <h1 class="section-title plum2 text-center">ABOUT ME</h1>
             <div class="my-icon mx-auto mb-4">
                 <img src={{ asset ("images/plum_icon_maki.png") }} alt="" class="img-fluid rounded-pill ">
                 <h5 class="name plum2">RIHO</h5>
@@ -371,7 +331,7 @@ body {
             </ul>
 
             <div class="text-end">
-                <h4 class="kabla text-end text-secondary d-inline">More</h4>
+                <h4 class="text-end text-secondary d-inline">More</h4>
                 <p class="text-secondary d-inline">(Coming soon...)</p>
             </div>
 
@@ -382,7 +342,7 @@ body {
     <!-- WORKS -->
     <section id="works" class="snap-section snap ">
         <div class="section-box text-center">
-            <h1 class="section-title plum2 kabla ">WORKS</h1>
+            <h1 class="section-title plum2 ">WORKS</h1>
 
 
             <div class="mx-auto works-section-box overflow-auto">
@@ -418,7 +378,7 @@ body {
     <!-- CONTACT -->
     <section id="contact" class="snap-section snap">
         <div class="section-box text-center">
-            <h1 class="section-title plum2 kabla ">CONTACT</h1>
+            <h1 class="section-title plum2 ">CONTACT</h1>
             <p class="text-center">
                 <a href="https://www.instagram.com/riho.plum_kobo/" class="text-decoration-none text-dark"><i class="fa-brands fa-instagram fs-1"></i></a>
 
@@ -432,11 +392,11 @@ body {
 
 </main>
 
-<!-- JS（必須） -->
+<!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- //footer -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> <!--jQueryを読み込む-->
-<script src="./js/script.js"></script> <!--jsファイルを読み込む-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="{{ asset('js/script.js') }}"></script>
 
 </body>
 </html>

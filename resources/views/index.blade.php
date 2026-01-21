@@ -325,7 +325,7 @@ body {
             </div>
             <p>生き物と旅が好きな <span class="fw-bold">Web クリエイター</span>。<br>世の中には、ネットの世界に出てこない情報がたくさんあります。それを世に出すお手伝いをします。</p>
             <ul>
-                <li>Webサイト制作（デザイン〜コーディング）</li>
+                <li>Webサイト制作（企画〜デザイン〜コーディング）</li>
                 <li>ロゴやイメージ画像の作成</li>
                 <li>運用サポート</li>
             </ul>
@@ -349,7 +349,7 @@ body {
                 <div class="row w-100 align-items-center ">
 
                     @foreach($all_posts as $post)
-                      <div class="col-lg-4 mb-1">
+                      <div class="col-lg-4 mb-2">
                         <div class="card border-0 ">
                             <img class="card-img-top img-fluid works-img" src="{{$post->image}}" alt="">
                             <div class="card-body m-1 p-0">

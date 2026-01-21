@@ -1,3 +1,4 @@
+@section('title', 'PLUM | WORKS')
 @extends('layouts.app')
 
 @section('content')

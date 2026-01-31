@@ -211,7 +211,7 @@
     <h3>Gold Cruiseの魅力</h3>
     <div class="service-container">
         <a href="#" class="service-box">
-            <img src={{ asset ("images/cruise/buffet.jpeg") }}>
+            <img src="{{ asset ('images/cruise/buffet.jpeg') }}">
             <span>5:00-24:00</span>
             <h3>
                 食事
@@ -221,7 +221,7 @@
             </p>
         </a>
         <a href="#" class="service-box">
-            <img src={{ asset ("images/cruise/billiards.jpeg") }}>
+            <img src="{{ asset ('images/cruise/billiards.jpeg') }}">
             <span>7:00-23:00</span>
             <h3>
                 屋内施設
@@ -231,7 +231,7 @@
             </p>
         </a>
         <a href="#" class="service-box">
-            <img src={{ asset ("images/cruise/pool.jpeg") }} >
+            <img src="{{ asset ('images/cruise/pool.jpeg') }}" >
             <span>7:00-23:00</span>
             <h3>
                 食事

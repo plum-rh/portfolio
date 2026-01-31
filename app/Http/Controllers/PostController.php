@@ -114,4 +114,24 @@ class PostController extends Controller
         return view('works.demo.cruise');
     }
 
+    public function showBlogDashboard(){
+        return view('works.demo.blog.dashboard');
+    }
+    public function showBlogPosts(){
+        return view('works.demo.blog.posts');
+    }
+    public function showBlogCategories(){
+        return view('works.demo.blog.categories');
+    }
+    public function showBlogUsers(){
+        return view('works.demo.blog.users');
+    }
+
+    public function showBlogAddPost(){
+        return view('works.demo.blog.add-post');
+    }
+
+    public function showBlogProfile(){
+        return view('works.demo.blog.profile');
+    }
 }

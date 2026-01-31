@@ -27,8 +27,8 @@
     <div id="app">
                 <nav class="navbar navbar-expand-sm navbar-light bg-dark shadow-sm text-white fixed-top">
             <div class="container">
-                <a class="navbar-brand text-white" href="{{ url()->previous() }}">
-                    <i class="fa-solid fa-angles-left"></i>Back
+                <a class="navbar-brand text-white" href="/">
+                    <i class="fa-solid fa-angles-left"></i>Home
                 </a>
 
                 <div class="navbar-collapse">

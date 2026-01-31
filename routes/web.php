@@ -22,3 +22,9 @@ Route::get('/works', [PostController::class, 'show'])->name('post.show');
 Route::get('/works/coffee-bean', [PostController::class, 'showCoffee'])->name('post.showcoffee');
 Route::get('/works/cruise', [PostController::class, 'showCruise'])->name('post.showcruise');
 
+Route::get('/works/blog', [PostController::class, 'showBlogDashboard'])->name('post.showBlogDashboard');
+Route::get('/works/blog/categories', [PostController::class, 'showBlogCategories'])->name('post.showBlogCategories');
+Route::get('/works/blog/posts', [PostController::class, 'showBlogPosts'])->name('post.showBlogPosts');
+Route::get('/works/blog/users', [PostController::class, 'showBlogUsers'])->name('post.showBlogUsers');
+Route::get('/works/blog/add-post', [PostController::class, 'showBlogAddPost'])->name('post.showBlogAddPost');
+Route::get('/works/blog/profile', [PostController::class, 'showBlogProfile'])->name('post.showBlogProfile');

@@ -29,8 +29,8 @@
     <body>
         <nav class="navbar navbar-expand-sm navbar-light bg-dark shadow-sm text-white fixed-top">
             <div class="container">
-                <a class="navbar-brand text-white" href="{{ url()->previous() }}">
-                    <i class="fa-solid fa-angles-left"></i>Back
+                <a class="navbar-brand text-white" href="/works">
+                    <i class="fa-solid fa-angles-left"></i>Works List
                 </a>
 
                 <div class="navbar-collapse">

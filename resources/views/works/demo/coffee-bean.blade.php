@@ -10,9 +10,7 @@
         p,a,label,table,input{
             font-family: 'Raleway';
         }
-        nav h3{
-            font-family: 'Zen Kaku Gothic Antique', sans-serif;
-        }
+
 
         header{
             width: 85%;
@@ -43,7 +41,7 @@
             line-height: 70px;
         }
         .top-item{
-            background-image: url('{{ asset('images/coffee-bean/banner-bg.jpg') }}');
+            background-image: url('{{ asset("images/coffee-bean/banner-bg.jpg") }}');
             height: 500px;
             background-size: cover;
             background-position: center;
@@ -100,7 +98,7 @@
             width: 48%;
         }
         .second-left{
-            background-image: url('{{ asset('images/coffee-bean/ads-img1.jpg') }}');
+            background-image: url('{{ asset("images/coffee-bean/ads-img1.jpg") }}');
             height: 350px;
             background-size: cover;
             background-position: center;
@@ -110,7 +108,7 @@
         }
 
         .second-right{
-            background-image: url('{{ asset('images/coffee-bean/ads-img2.jpg') }}');
+            background-image: url('{{ asset("images/coffee-bean/ads-img2.jpg") }}');
             height: 350px;
             background-size: cover;
             background-position: center;
@@ -147,7 +145,7 @@
         .fourth-item{
             clear:both;
             text-align: center;
-            background-image: url('{{ asset('images/coffee-bean/discount-img.jpg') }}');
+            background-image: url('{{ asset("images/coffee-bean/discount-img.jpg") }}');
 
             height: 350px;
             background-size: cover;
@@ -219,7 +217,7 @@
         }
 
         .sixth-upleft{
-            background-image: url('{{ asset('images/coffee-bean/ads-img3.jpg') }}');
+            background-image: url('{{ asset("images/coffee-bean/ads-img3.jpg") }}');
 
             height: 350px;
             background-size: cover;
@@ -230,7 +228,7 @@
         }
 
         .sixth-upright{
-            background-image: url('{{ asset('images/coffee-bean/ads-img4.jpg') }}');
+            background-image: url("{{ asset('images/coffee-bean/ads-img4.jpg') }}");
             height: 350px;
             background-size: cover;
             background-position: center;
@@ -239,7 +237,7 @@
             position: relative;
         }
         .sixth-downleft{
-            background-image: url('{{ asset('images/coffee-bean/ads-img5.jpg') }}');
+            background-image: url("{{ asset('images/coffee-bean/ads-img5.jpg') }}");
             height: 350px;
             background-size: cover;
             background-position: center;
@@ -249,7 +247,7 @@
         }
 
         .sixth-downright{
-            background-image: url('{{ asset('images/coffee-bean/ads-img6.jpg') }}');
+            background-image: url("{{ asset('images/coffee-bean/ads-img6.jpg') }}");
             height: 350px;
             background-size: cover;
             background-position: center;
@@ -324,7 +322,7 @@
         .bottom-item{
             display: flex;
             justify-content: space-between;
-            background-image: url('{{ asset('images/coffee-bean/footer-img.jpg') }}');
+            background-image: url("{{ asset('images/coffee-bean/footer-img.jpg') }}");
             background-size: cover;
             background-position: center;
             margin-top: 30px;
@@ -435,27 +433,28 @@
             <h2>COFFEE HOUSE MERCHANDISE</h2>
             <hr/>
         </div>
+
         <div class="third-item-1">
             <div class="item-box">
-            <img src={{ asset ("images/coffee-bean/merch-img1.jpg") }}>
+            <img src='{{ asset ("images/coffee-bean/merch-img1.jpg") }}'>
                <h3>Arbica - Extra Course</h3>
                <span>*****</span>
                <p>$70.00</p>
             </div>
             <div class="item-box">
-               <img src={{ asset ("images/coffee-bean/merch-img2.jpg") }}>
+               <img src='{{ asset ("images/coffee-bean/merch-img2.jpg") }}'>
                <h3>Arbica - Fine Grind</h3>
                <span>*****</span>
                <p>$70.00</p>
             </div>
             <div class="item-box">
-               <img src={{ asset ("images/coffee-bean/merch-img3.jpg") }}>
+               <img src='{{ asset ("images/coffee-bean/merch-img3.jpg") }}'>
                <h3>French Vanilla</h3>
                <span>*****</span>
                <p>$80.00</p>
             </div>
             <div class="item-box">
-               <img src={{ asset ("images/coffee-bean/merch-img4.jpg") }}>
+               <img src='{{ asset ("images/coffee-bean/merch-img4.jpg") }}'>
                <h3>Deluxe Chocolate</h3>
                <span>*****</span>
                <p>$100.00</p>
@@ -464,25 +463,25 @@
         <div class="space"></div>
         <div class="third-item-2">
             <div class="item-box">
-               <img src={{ asset ("images/coffee-bean/merch-img5.jpg") }}>
+               <img src='{{ asset ("images/coffee-bean/merch-img5.jpg") }}'>
                <h3>Original Beans</h3>
                <span>*****</span>
                <p>$100.00</p>
             </div>
             <div class="item-box">
-               <img src={{ asset ("images/coffee-bean/merch-img6.jpg") }}>
+               <img src='{{ asset ("images/coffee-bean/merch-img6.jpg") }}'>
                <h3>Paper Pouch</h3>
                <span>*****</span>
                <p>$71.00</p>
             </div>
             <div class="item-box">
-               <img src={{ asset ("images/coffee-bean/merch-img7.jpg") }}>
+               <img src='{{ asset ("images/coffee-bean/merch-img7.jpg") }}'>
                <h3>Freshly Picked</h3>
                <span>*****</span>
                <p>$71.00</p>
             </div>
             <div class="item-box">
-               <img src={{ asset ("images/coffee-bean/merch-img8.jpg") }}>
+               <img src='{{ asset ("images/coffee-bean/merch-img8.jpg") }}'>
                <h3>Mug</h3>
                <span>*****</span>
                <p></p>$25.00</p>
@@ -507,25 +506,25 @@
 
         <div class="fifth-item">
             <div class="item-box">
-               <img src={{ asset ("images/coffee-bean/merch-img9.jpg") }}>
+               <img src='{{ asset ("images/coffee-bean/merch-img9.jpg") }}'>
                <h3>Arabica with cup</h3>
                <span>*****</span>
                <p></p>90.00</p>
             </div>
             <div class="item-box">
-               <img src={{ asset ("images/coffee-bean/merch-img10.jpg") }}>
+               <img src='{{ asset ("images/coffee-bean/merch-img10.jpg") }}'>
                <h3>Duble Arabica</h3>
                <span>*****</span>
                <p></p>120.00</p>
             </div>
             <div class="item-box">
-               <img src={{ asset ("images/coffee-bean/merch-img11.jpg") }}>
+               <img src='{{ asset ("images/coffee-bean/merch-img11.jpg") }}'>
                <h3>Paper Pouch</h3>
                <span>*****</span>
                <p></p>100.00</p>
             </div>
             <div class="item-box">
-               <img src={{ asset ("images/coffee-bean/merch-img12.jpg") }}>
+               <img src='{{ asset ("images/coffee-bean/merch-img12.jpg") }}'>
                <h3>Double Mug</h3>
                <span>*****</span>
                <p></p>40.00</p>
@@ -613,7 +612,7 @@
 
                     <div class="center-text mt-5">
                         <h4>PAYMENT</h4>
-                        <img src={{ asset ("images/coffee-bean/reservation-cards.png")}}>
+                        <img src='{{ asset ("images/coffee-bean/reservation-cards.png")}}'>
 
                         <p>Payment Accepted Cards</p>
                     </div>

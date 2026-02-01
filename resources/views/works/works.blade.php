@@ -6,7 +6,7 @@
 
     @foreach ($all_categories as $category)
     @if ($category->posts->isNotEmpty())
-        <p class="text-light fw-bold mt-5 fs-3 pt-3">{{$category->name}}</p>
+        <p class="text-light fw-bold mt-5 pt-3 fs-3">{{$category->name}}</p>
 
         <div class="row">
             @foreach ($category->posts as $post)

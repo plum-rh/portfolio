@@ -25,18 +25,32 @@
 <body  style="background-image: url('{{ asset('images/main.png') }}');">
 <div class="bg-overlay"></div>
     <div id="app">
-                <nav class="navbar navbar-expand-sm navbar-light bg-dark shadow-sm text-white fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark shadow-sm text-white fixed-top fw-bold">
             <div class="container">
                 <a class="navbar-brand text-white" href="/">
-                    <i class="fa-solid fa-angles-left"></i>Home
+                    <img src='{{ asset ("images/plum_logo_p2.png")}}' alt="plum_logo" style="width: 75px;">
+                    {{-- <i class="fa-solid fa-angles-left"></i>Works List --}}
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="navbar-collapse">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mx-auto">
-                        <h3 class="m-0 text-center fw-light text-nowrap d-none d-sm-block me-5 pe-5">
-                            
-                        </h3>
+                    <ul class="navbar-nav  me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 mt-1 p-0 pe-3" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 mt-1 p-0 pe-3" href="/#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5 mt-1 p-0 pe-3" href="/works">Works List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled fs-5 mt-1 p-0 pe-3" href="/works">Blog</a>
+                        </li>
+
                     </ul>
 
                 </div>

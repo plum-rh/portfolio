@@ -134,4 +134,24 @@ class PostController extends Controller
     public function showBlogProfile(){
         return view('works.demo.blog.profile');
     }
+
+    public function showInsta(){
+        return view('works.demo.insta.index');
+    }
+    public function showInstaCreate(){
+        return view('works.demo.insta.create');
+    }
+    public function showInstaProfile1(){
+        return view('works.demo.insta.profile1');
+    }
+    public function showInstaProfile2(){
+        return view('works.demo.insta.profile2');
+    }
+    public function showInstaProfile3(){
+        return view('works.demo.insta.profile3');
+    }
+    public function showInstaProfile5(){
+        return view('works.demo.insta.profile5');
+    }
+
 }

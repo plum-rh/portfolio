@@ -6,7 +6,7 @@
 
     @foreach ($all_categories as $category)
     @if ($category->posts->isNotEmpty())
-        <p class="text-light fw-bold mt-5 fs-3">{{$category->name}}</p>
+        <p class="text-light fw-bold mt-5 fs-3 pt-3">{{$category->name}}</p>
 
         <div class="row">
             @foreach ($category->posts as $post)
@@ -30,7 +30,7 @@
 
                         <div class="row bg-light m-1 p-3 shadow">
                             <div class="col-4">
-                                <a href="/works/{{$post->link}}">
+                                <a href="{{$post->link}}">
                                     <img class="card-img-top img-fluid works-img" src="{{$post->image}}" alt="{{$post->name}}">
                                 </a>
 

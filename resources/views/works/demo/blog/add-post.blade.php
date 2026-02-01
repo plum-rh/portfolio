@@ -92,22 +92,10 @@
                     </div>
             </div>
         </div>
-
-
-
-
-
-
         <div class="bg-light text-light">
             <p>footer</p>
             <p>footer</p>
         </div>
-
-
-
-
-
-
 
         <!-- CDN JS Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

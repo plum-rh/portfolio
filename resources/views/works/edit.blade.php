@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<form action="{{route('post.update', $post->id)}}" method="post" enctype="multipart/form-data">
+<form action="{{route('post.update', $post->id)}}" method="post" enctype="multipart/form-data"  class="mt-5 pt-5">
     @csrf
     @method('PATCH')
 

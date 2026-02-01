@@ -14,12 +14,14 @@
                     @if($category->id == 1 || $category->id == 2|| $category->id == 6)
 
                         <div class="row bg-light m-1 p-3 shadow">
-                            <div class="col-4">
+                            <div class="col-lg-4 col-md-6 d-flex align-items-center">
                                 <img class="card-img-top img-fluid works-img" src="{{$post->image}}" alt="{{$post->name}}"   data-bs-toggle="modal" data-bs-target="#modal{{$post->id}}" role="button">
                             </div>
-                            <div class="col-8 p-3 text-start">
+                            <div class="col-lg-8 p-3 text-start col-md-6">
                                 <h6>{{$post->name}} <span class="float-end text-light">{{$post->id}}</span></h6>
                                 <div class="text-muted small">{{$post->description}}</div>
+                                <br>
+                                <div class="text-muted small">※画像をクリックすると拡大できます。</div>
 
                             </div>
                         </div>
@@ -29,15 +31,17 @@
                     @else
 
                         <div class="row bg-light m-1 p-3 shadow">
-                            <div class="col-4">
+                            <div class="col-lg-4 col-md-6 d-flex align-items-center">
                                 <a href="{{$post->link}}">
                                     <img class="card-img-top img-fluid works-img" src="{{$post->image}}" alt="{{$post->name}}">
                                 </a>
 
                             </div>
-                            <div class="col-8 p-3 text-start">
+                            <div class="col-lg-8 p-3 text-start col-md-6">
                                 <h6>{{$post->name}} <span class="float-end text-light">{{$post->id}}</span></h6>
                                 <div class="text-muted small">{{$post->description}}</div>
+                                <br>
+                                <div class="text-muted small">※画像をクリックするとサイトが表示されます。模擬案件の場合、一部のみデモサイトとして閲覧可能です。</div>
 
                             </div>
                         </div>

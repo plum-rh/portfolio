@@ -34,7 +34,7 @@
                 <div class="navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mx-auto">
-                        <h3 class="m-0 text-center fw-light text-nowrap d-none d-sm-block">
+                        <h3 class="m-0 text-center fw-light text-nowrap d-none d-sm-block me-5 pe-5">
                             WORKS
                         </h3>
                     </ul>

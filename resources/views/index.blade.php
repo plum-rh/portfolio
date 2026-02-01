@@ -274,7 +274,7 @@ body {
 <aside class="sidebar fs-3 fw-bold">
     <div class="fs-2 text-white title">
         <a href="#hero" class="text-decoration-none ms-4 mt-2">
-            <img src={{ asset ("images/plum_logo_p2.png")}} alt="" class="img-fluid w-75">
+            <img src='{{ asset ("images/plum_logo_p2.png")}}' alt="" class="img-fluid w-75">
         </a>
     </div>
 

@@ -83,7 +83,7 @@
                         <div class="col-4">
                             <div class="row">
                                 <div class="col">
-                                    <img src={{ asset ("images/blog/guineapig.png") }} alt="GuineaPig" class="img-fluid">
+                                    <img src={{ asset ("images/guineapig.png") }} alt="GuineaPig" class="img-fluid">
                                 </div>
                             </div>
                             <div class="row my-2">
